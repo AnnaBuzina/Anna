@@ -24,7 +24,6 @@ question_list.append(Question('Какого модуля НЕТ в станда�
 question_list.append(Question('Упорядоченный набор пар вида «ключ-значение»?', 'Словарь', 'Список','Переменная', 'Класс'))
 question_list.append(Question('Переменная, помещённая внутрь объекта?', 'Свойство', 'Метод','Функция', 'Класс'))
 
-#shuffle(question_list)
     # Создание приложения и главного окна
 app = QApplication([])
 main_win = QWidget()
@@ -176,11 +175,6 @@ def next_question():   # Функция для перехода между во�
     q = question_list[cur_question]
     ask(q)
     main_win.cur_question += 1
-    '''if main_win.cur_question == len(question_list):
-        main_win.cur_question = 0
-        shuffle(question_list)
-        q = question_list[main_win.cur_question]
-        ask(q)'''
         
 def click_ok():     # Функция для переключения вопросов
     button_1.text()
